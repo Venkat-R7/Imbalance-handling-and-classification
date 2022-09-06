@@ -57,7 +57,7 @@ The SMOTE technique was applied to handle the imbalance in the dataset by oversa
 
 ![](Images/Image2.PNG)
 
-Malware apps account for 66% of the total datapoints, while not malware accounts for 34%, where 1 represents Malware and 0 represents not malware (Step 5.1 in code).
+Malware apps account for 66% of the total datapoints, while not malware accounts for 34%, where 1 represents Malware and 0 represents not malware.
 First, the model's accuracy on the validation dataset is 39.8 and 78.56 before and after applying SMOTE, respectively, as shown in Figure 6. The true positive and false positive values are provided by the confusion matrix of the findings, which can be seen in the first image. All of the true positive values have been misclassified as 1 instead of 0, this means that the model predicts with a 0% precision on the minority class. Thus, the model is completely biased towards the majority class 1, and classifies all apps as malware. 
 The next image in the figure gives the confusion matrix of the model which was trained after the dataset was balanced. In this case the datapoints were equally split at 50% for each class. In this case the model provides 79% accuracy.
 
