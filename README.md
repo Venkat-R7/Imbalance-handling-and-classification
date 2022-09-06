@@ -55,7 +55,7 @@ Previous research on evaluation of SMOTE have shown significant improvement in m
 
 The SMOTE technique was applied to handle the imbalance in the dataset by oversampling the minority class. The random forest model which was identified to be the best fit classifier was trained on the dataset before and after applying SMOTE. The following are the outcomes produced 
 
-![](Images/Image1.PNG)
+![](Images/Image2.PNG)
 
 Malware apps account for 66% of the total datapoints, while not malware accounts for 34%, where 1 represents Malware and 0 represents not malware (Step 5.1 in code).
 First, the model's accuracy on the validation dataset is 39.8 and 78.56 before and after applying SMOTE, respectively, as shown in Figure 6. The true positive and false positive values are provided by the confusion matrix of the findings, which can be seen in the first image. All of the true positive values have been misclassified as 1 instead of 0, this means that the model predicts with a 0% precision on the minority class. Thus, the model is completely biased towards the majority class 1, and classifies all apps as malware. 
@@ -69,6 +69,19 @@ The Figure below provides the accuracy metric and represents the same graphicall
 All other classification techniques developed namely, Naïve bayes, KNN and SVM perform with a validation accuracy of 74.2, 76.9 and 77.2% respectively.
 
 ![](Images/Image3.PNG)
+
+**Hyperparameter Tuning
+
+Figure below shows the model metrics for the hyper parameter tuned model. 
+The classification report shows that the precision of the minority class has increased significantly, and that the classification is more evenly balanced between the two classes than the baseline model with the 15% misclassification being evenly distributed between both the positive and negative class.
+The confusion matrix depicts the true and false positive along with mis classification numbers on the validation dataset.
+
+![](Images/Image4.PNG)
+
+**Conclusion**
+
+In this project the android permission dataset was used to build several machine learning models to classify if an application Is malicious or not malicious. Several data pre-processing techniques were carried, in which SMOTE technique was adopted to handle the imbalance in the dataset. The data handling yielded better result in model performance compared to that on imbalanced dataset.  
+Overall, the Random Forest model was observed to be the best fit model which was hyper parameter tuned and model was used in predicting the test dataset 
 
 
 
