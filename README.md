@@ -46,7 +46,7 @@ To handle the imbalance SMOTE- Synthetic Minority Over-sampling Technique was us
 In general a random oversampling might increase the over fitting likelihood, in terms of SMOTE since the data are not copied, it will not result in duplicate datasets, further since the synthetic data generated are based on the existing dataset it will still hold the similarity with the existing datapoints.
 Previous research on evaluation of SMOTE have shown significant improvement in model efficiency. The performance analysis of SMOTE based technique concludes that SMOTE provides significant improvement and further suggests improved variants of SMOTE to be considered to compare imbalance handling.
 
-![](Images/Image1.png)
+![](Images/Image1.PNG)
 
 
 **Results**
@@ -55,7 +55,7 @@ Previous research on evaluation of SMOTE have shown significant improvement in m
 
 The SMOTE technique was applied to handle the imbalance in the dataset by oversampling the minority class. The random forest model which was identified to be the best fit classifier was trained on the dataset before and after applying SMOTE. The following are the outcomes produced 
 
-![](Images/Image2.png)
+![](Images/Image1.PNG)
 
 Malware apps account for 66% of the total datapoints, while not malware accounts for 34%, where 1 represents Malware and 0 represents not malware (Step 5.1 in code).
 First, the model's accuracy on the validation dataset is 39.8 and 78.56 before and after applying SMOTE, respectively, as shown in Figure 6. The true positive and false positive values are provided by the confusion matrix of the findings, which can be seen in the first image. All of the true positive values have been misclassified as 1 instead of 0, this means that the model predicts with a 0% precision on the minority class. Thus, the model is completely biased towards the majority class 1, and classifies all apps as malware. 
@@ -68,7 +68,7 @@ The Figure below provides the accuracy metric and represents the same graphicall
 
 All other classification techniques developed namely, Naïve bayes, KNN and SVM perform with a validation accuracy of 74.2, 76.9 and 77.2% respectively.
 
-![](Images/Image3.png)
+![](Images/Image3.PNG)
 
 
 
