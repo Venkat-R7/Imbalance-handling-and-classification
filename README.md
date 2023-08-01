@@ -1,4 +1,4 @@
-# Imbalance-Handling(using SMOTE)-and-Imgae-Classification
+# Imbalance-Handling(using SMOTE)-and-Classification-Modelling
 
 **Introduction**
 
